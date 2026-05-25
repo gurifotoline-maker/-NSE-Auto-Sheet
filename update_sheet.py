@@ -46,7 +46,7 @@ def fetch_bhavcopy_for_date(date_obj):
             with zipfile.ZipFile(io.BytesIO(response.content)) as z:
                 csv_filename = z.namelist()[0]
                 with z.open(csv_filename) as f:
-                    df = pd.read_csv(f)वेब Apps और ऑनलाइन टूल
+                    df = pd.read_csv(f)
                     
                     # नए कॉलम के नाम खोजना
                     sym_col = 'TckrSymb' if 'TckrSymb' in df.columns else 'SYMBOL'

@@ -123,7 +123,7 @@ if data_vol_to_insert and data_turnover_to_insert:
         ws_turnover.update('A2', data_turnover_to_insert)
         
         # टाइमस्टैम्प अपडेट करें
-        ist_now = (datetime.utcnow() + timedelta(hours=5, minutes=30)).strftime('%d-%b %H:%M')वॉल्यूम विश्लेषण
+        ist_now = (datetime.utcnow() + timedelta(hours=5, minutes=30)).strftime('%d-%b %H:%M')
         status_msg = f"Data Date: {fetched_date_str} | Last Update: {ist_now} (IST)"
         
         ws_volume.update('K2', [[status_msg]])
